@@ -15,16 +15,11 @@ The store operates across several global regions with both online (website, mobi
 The analysis was based on an Excel file with two sheets:
 
 ### 1. `orders`
-Each row represents a single transaction with fields including:
-- `order_id`
-- `purchase_ts`, `ship_ts`
-- `product_id`, `product_name`, `usd_price`
-- `platform` (website/mobile/in-person)
-- `marketing_channel`, `account_creation_method`
-- `country_code`, `region`, `user_id`
 
 ### 2. `region`
 A reference sheet mapping country codes to broader regions (e.g., NA, EMEA, APAC)
+
+![dataset_structure](pics_and_graphs/game_zone.drawio.png)
 
 ---
 
