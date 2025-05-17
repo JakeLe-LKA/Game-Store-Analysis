@@ -50,50 +50,123 @@ An **issue log** was created to document data quality issues and solutions:
 - **Steady YoY growth** in revenue observed.
 - Clear **seasonal peaks** in **September** and **December**, especially December (likely due to Christmas and year-end sales).
 
+![rev_by_platform_ovt](pics_and_graphs/rev_by_platform_ovt.png)
+
 ### 2. Platform & marketing channel performance
-- **Website is the top-performing platform**, followed by mobile.
-- **In-person selling remains the most effective marketing channel**, outperforming email, referral, and paid ads in conversion and revenue.
+
+![mkt_chnl_ovt](pics_and_graphs/mkt_chnl_ovt.png)
+
+- **Website is the dominated platform**, compared to mobile application.
+- **In-store selling remains the most effective marketing channel**.
+
 
 ### 3. Regional performance
+
+![order_by_region](pics_and_graphs/order_by_region.png)
+
 - **North America (NA)** is the best-performing region in both revenue and number of orders, followed by **EMEA**.
+
+![order_by_na_country](pics_and_graphs/order_by_country_na.png)
+
 - Within NA:
   - 🇺🇸 **USA dominates** in both order volume and revenue.
-  - 🇨🇦 **Canada** follows as a strong secondary market.
+  - 🇨🇦 **Canada** follows as a potential secondary market.
+
+![order_by_emea_country](pics_and_graphs/order_by_country_emea.png)
+
+- Within EMEA:
+  - **UK** stands first in number of orders, followed by **Germany** and **France**.
 
 ### 4. Best-selling products by region
-- Regional best-sellers vary, but **27" 4K Gaming Monitor** consistently performs well in NA and EMEA.
-- Product bundling and accessories show potential in underperforming regions.
+
+![best_selling_product_by_region](pics_and_graphs/best_selling_product_by_region.png)
+
+- **Nintendo Switch** is the top seller of the store in all region, followed by **27-in 4K gaming monitor**
 
 ### 5. Shipping time analysis
-- **Average delivery time varies by region**:
-  - NA: fastest (likely due to local logistics)
-  - APAC & LATAM: longer delivery time, potential logistics bottlenecks
 
-### 6. Marketing channel trend
-- **Direct selling is stable and consistently high-performing**.
-- **Email marketing usage is increasing**, but conversion rate not significantly improving.
-- **Referral and paid ads** show fluctuating trends, suggesting inconsistent execution.
+![avg_delivery_by_region](pics_and_graphs/avg_delivery_by_region.png)
+
+- **Average delivery time varies by region**:
+  - LATAM: fastest 
+  - EMEA: longer delivery time, potential logistics bottlenecks
+
+### 6. Deeper look into the top performance market - America
+
+#### Revenue and number of orders by product
+
+![rev_Num_sales_by_product_us](pics_and_graphs/rev_no_sales_by_product_us.png)
+
+- Despite being the second best-selling product globally and in the US, **gaming monitors** are the biggest source of revenue.
+- Following in turn is the best-selling product - **Nintendo Switch**.
+- **PlayStation 5 Bundle** products, despite low sales, are the third largest source of revenue in the US.
+- In contrast, the **JBL Quantum 100 Gaming Headset**, although ranked 3rd in sales, did not contribute much to revenue.
+
+#### Marketing channel and Sales platform 
+
+| Sales platform | Revenue | Number of order |
+|----------------|---------|-----------------|
+| website | 2865957,99 | 9162 |
+| mobile app | 89855,23| 1132 |
+
+- Similar to global trends, in the US, website purchases still account for the majority compared to mobile app channels.
+
+![rev_by_mkt_chnl_us](pics_and_graphs/rev_by_mkt_chnl_us.png)
+
+- The most effective marketing channel is still in-store, followed by email and affiliate.
 
 ---
 
 ## Recommendations
 
-### Revenue growth strategy
-- **Double down on December promotions** using high-conversion channels like in-person and website to maximize seasonal peaks.
-- Consider **pre-season bundles and email reminders** starting early November.
+### Maximize seasonal revenue peaks
+- **Capitalize on the strong revenue spikes in September and December** by launching targeted marketing campaigns and product bundles at least one month in advance.
+- Introduce **limited-time holiday editions** or special promotions (e.g., “Holiday Gaming Bundle”) for best-selling products like Nintendo Switch and gaming monitors.
+- Implement **inventory scaling and logistics preparedness** to avoid stockouts and delivery delays during high-demand periods.
 
-### Regional expansion
-- **Replicate successful US strategies** (product mix, platform/channel) to other high-potential markets like Canada and the UK.
-- For regions with long shipping delays (e.g., LATAM, APAC), explore **logistics partners or local fulfillment options**.
+---
 
-### Marketing optimization
-- Allocate more budget to **direct sales support and website UX improvements**.
-- **Reevaluate paid ads and email strategies** — focus on audience segmentation, A/B testing and ROI tracking.
-- Invest in **data collection for missing marketing data** to better measure effectiveness across channels.
+### Optimize sales platforms
+- Since the **website outperforms the mobile platform** in revenue, invest in:
+  - Enhanced **website performance and user experience**.
+  - Personalized product recommendations and simplified checkout flows.
+- Consider **re-evaluating the mobile strategy**, or better integrate web-to-app experiences if mobile is to be retained.
 
-### Operational improvement
-- Flag and monitor **orders with `ship_ts < purchase_ts`** in future systems.
-- Implement **basic validation rules at the data entry stage** to minimize manual cleaning.
+---
+
+### Double down on in-store channel strength
+- **In-store selling remains the most effective marketing channel**, suggesting:
+  - Expansion of physical sales promotions and exclusive in-store offers.
+  - Use in-store data to segment and re-target online customers with personalized ads.
+  - Increase **click-and-collect** functionality to bridge online and offline experience.
+
+---
+
+### Regional scaling strategy
+- **North America leads in both revenue and order volume**:
+  - Scale successful campaigns from the **USA** into **Canada** with minimal localization.
+  - Replicate best-selling bundles and product recommendations in other promising markets like the **UK** and **Germany**.
+
+- **EMEA shows logistics challenges**:
+  - Investigate **shipping partners or local warehousing** in Europe to reduce average delivery times.
+  - Explore dynamic shipping options or delivery guarantees to improve customer satisfaction.
+
+---
+
+### Product-specific promotions
+- While **Nintendo Switch dominates sales volume**, **gaming monitors generate the highest revenue**.
+  - Create **tiered bundles** (e.g., monitor + accessories) to increase average order value.
+  - Consider **cross-selling high-margin items** like PlayStation bundles with promotional campaigns despite their lower sales count.
+
+- Reassess product pricing or positioning of low-revenue, high-volume products like the **JBL Quantum 100 Headset** to maximize profitability.
+
+---
+
+### Deep dive into the US market
+- With the **US being the top market**, focus on:
+  - Retargeting past buyers of gaming monitors and Switch with upgrade offers or related accessories.
+  - Analyzing regional US sub-markets to localize promotions more effectively (e.g., West Coast vs. East Coast preferences).
+
 
 ---
 
