@@ -27,20 +27,20 @@ A reference sheet mapping country codes to broader regions (e.g., NA, EMEA, APAC
 
 An **issue log** was created to document data quality issues and solutions:
 
-| Table | Column(s) | Issue | Rows Affected | % | Solvable | Resolution |
+| Table | Column(s) | Issue | Rows affected | Magnitude | Solvable | Resolution |
 |-------|-----------|-------|----------------|----|---------|------------|
-| orders | `purchase_ts` | Inconsistent formats | 10 | 0.05% | ✅ | Used `DATE` functions |
-| orders | `purchase_ts` | Missing | 1 | 0.00% | ❌ | Left as-is |
+| orders | `purchase_ts` | Inconsistent formats | 10 | 0.05% | ✅ | used `DATE` functions to reformat the dates correctly|
+| orders | `purchase_ts` | Missing | 1 | 0.00% | ❌ | Left as-is (low magnitude and no way to infer) |
 | orders | `product_name` | Spelling inconsistency | 61 | 0.28% | ✅ | Standardized naming |
-| orders | `product_id` | Inconsistent format | 722 | 3.30% | ✅ | Used `TEXT` functions |
+| orders | `product_id` | Inconsistent format | 722 | 3.30% | ✅ | Used `TEXT` functions to reformat correctly|
 | orders | `usd_price` | Missing / 0 value | 34 | 0.16% | ❌ | Flagged for review |
 | orders | `marketing_channel` | Missing | 83 | 0.38% | ✅ | Replaced with "unknown" |
 | orders | `account_creation_method` | Missing | 83 | 0.38% | ✅ | Replaced with "unknown" |
-| orders | `country_code` | Missing | 37 | 0.17% | ❌ | Left as-is |
+| orders | `country_code` | Missing | 37 | 0.17% | ❌ | Left as-is (no way to infer, need to check with stakeholders |
 | regions | `region` | Invalid / missing | 9 | 0.04% | ✅ | Filled via lookup |
 | orders | `purchase_ts`, `ship_ts` | Ship before purchase | 2,000 | 9.15% | ❌ | Flagged only |
 | orders | all | Duplicate order_id | 145 | 0.66% | ⚠️ | Not removed (low impact) |
-| orders | `user_id` | Recognized as overly large number | 3 | 0.01% | ❌ | Left as-is |
+| orders | `user_id` | Recognized as overly large number | 3 | 0.01% | ❌ | Left as-is (no way to infer, need to check with stakeholders |
 
 ---
 
